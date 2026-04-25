@@ -19,6 +19,37 @@
 - `nopal-openclaw/references/recipes.md` — 多步骤工作流参考示例
 - `dist/nopal-openclaw.skill` — 打包后的技能文件
 
+## 安装方法
+
+### 前提条件
+
+- 已安装 OpenClaw
+- 已安装并完成 `gog` 认证
+
+### 安装到当前工作区
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/workspace/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/workspace/skills/
+```
+
+安装完成后，建议重新开启一个 OpenClaw 会话，让新技能被正确加载。
+
+### 作为本机共享技能安装
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
+```
+
+如果你希望同一台机器上的多个工作区或多个代理共用这个技能，可以使用这种方式。
+
+### 关于 `.skill` 文件
+
+仓库中也包含 `dist/nopal-openclaw.skill`，用于打包和分发；不过在 OpenClaw 中，通常直接从 `skills/` 目录读取技能文件夹。
+
 ## 特点
 
 - 默认优先使用 `gog`

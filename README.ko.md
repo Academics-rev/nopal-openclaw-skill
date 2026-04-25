@@ -19,6 +19,37 @@
 - `nopal-openclaw/references/recipes.md` — 복합 작업 레시피
 - `dist/nopal-openclaw.skill` — 배포용 패키지 파일
 
+## 설치 방법
+
+### 사전 준비
+
+- OpenClaw 설치
+- `gog` 설치 및 인증 완료
+
+### 현재 워크스페이스에 설치
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/workspace/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/workspace/skills/
+```
+
+설치 후에는 OpenClaw가 스킬을 읽도록 **새 세션을 시작**하면 됩니다.
+
+### 공용 로컬 스킬로 설치
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
+```
+
+이 방식은 같은 컴퓨터에서 여러 워크스페이스나 에이전트가 함께 재사용할 때 적합합니다.
+
+### `.skill` 파일에 대해
+
+저장소에 `dist/nopal-openclaw.skill` 파일도 포함돼 있지만, OpenClaw에서는 보통 `skills/` 아래의 **스킬 폴더 자체를 직접 읽는 방식**으로 사용합니다.
+
 ## 특징
 
 - 기본적으로 `gog`를 우선 사용합니다.

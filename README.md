@@ -19,6 +19,37 @@ This version is adapted for OpenClaw environments that already use `gog` for Goo
 - `nopal-openclaw/references/recipes.md` — multi-step workflow recipes
 - `dist/nopal-openclaw.skill` — packaged skill bundle
 
+## Installation
+
+### Prerequisites
+
+- OpenClaw
+- `gog` installed and authenticated
+
+### Install into the current workspace
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/workspace/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/workspace/skills/
+```
+
+Then start a new OpenClaw session so the skill is picked up.
+
+### Install as a shared local skill
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
+```
+
+Use this path if you want multiple workspaces or agents on the same machine to reuse the skill.
+
+### Note about `.skill`
+
+The repository includes `dist/nopal-openclaw.skill` for packaging and sharing, but OpenClaw uses the skill folder directly from `skills/`.
+
 ## Notes
 
 - Prefers `gog` first

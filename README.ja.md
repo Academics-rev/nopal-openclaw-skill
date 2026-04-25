@@ -19,6 +19,37 @@
 - `nopal-openclaw/references/recipes.md` — 複数ステップのワークフロー例
 - `dist/nopal-openclaw.skill` — 配布用にパッケージ化したスキルファイル
 
+## インストール方法
+
+### 前提条件
+
+- OpenClaw がインストールされていること
+- `gog` のインストールと認証が完了していること
+
+### 現在のワークスペースにインストールする
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/workspace/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/workspace/skills/
+```
+
+インストール後は、OpenClaw がスキルを読み込めるように**新しいセッションを開始**してください。
+
+### ローカル共有スキルとしてインストールする
+
+```bash
+git clone https://github.com/Academics-rev/nopal-openclaw-skill.git
+mkdir -p ~/.openclaw/skills
+cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
+```
+
+同じマシン上の複数のワークスペースやエージェントで共用したい場合は、この方法が便利です。
+
+### `.skill` ファイルについて
+
+リポジトリには `dist/nopal-openclaw.skill` も含まれています。これは配布や共有には便利ですが、OpenClaw では通常 `skills/` 配下のスキルフォルダを直接読み込んで使います。
+
 ## 特徴
 
 - 基本的に `gog` を優先して使います
