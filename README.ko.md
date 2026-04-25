@@ -1,4 +1,4 @@
-[English](README.md) | 한국어
+[English](README.md) | 한국어 | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
 
 # nopal-openclaw-skill
 
