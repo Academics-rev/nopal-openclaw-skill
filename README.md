@@ -50,6 +50,16 @@ Use this path if you want multiple workspaces or agents on the same machine to r
 
 The repository includes `dist/nopal-openclaw.skill` for packaging and sharing, but OpenClaw uses the skill folder directly from `skills/`.
 
+## Example requests
+
+```text
+check today's calendar
+summarize the important unread emails
+find the meeting notes in Drive and send me the link
+create a meeting notes doc and share it with the team
+read this sheet and turn it into a short report doc
+```
+
 ## Notes
 
 - Prefers `gog` first

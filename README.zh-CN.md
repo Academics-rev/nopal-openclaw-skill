@@ -50,6 +50,16 @@ cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
 
 仓库中也包含 `dist/nopal-openclaw.skill`，用于打包和分发；不过在 OpenClaw 中，通常直接从 `skills/` 目录读取技能文件夹。
 
+## 使用示例
+
+```text
+告诉我今天的日程
+帮我总结未读邮件里重要的内容
+在 Drive 里找到会议纪要并把链接发给我
+创建一份会议纪要文档并分享给团队
+读取这个表格，并整理成一份简短的报告文档
+```
+
 ## 特点
 
 - 默认优先使用 `gog`

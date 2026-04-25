@@ -50,6 +50,16 @@ cp -r nopal-openclaw-skill/nopal-openclaw ~/.openclaw/skills/
 
 저장소에 `dist/nopal-openclaw.skill` 파일도 포함돼 있지만, OpenClaw에서는 보통 `skills/` 아래의 **스킬 폴더 자체를 직접 읽는 방식**으로 사용합니다.
 
+## 실사용 예시
+
+```text
+오늘 일정 알려줘
+읽지 않은 메일 중 중요한 것만 요약해줘
+드라이브에서 회의록 찾아서 링크 보내줘
+회의록 문서 만들고 팀원에게 공유해줘
+이 시트 읽어서 짧은 보고서 문서로 정리해줘
+```
+
 ## 특징
 
 - 기본적으로 `gog`를 우선 사용합니다.
